@@ -1,0 +1,32 @@
+We can consider variables in that research project as something that was constructed from the particular elements and qualities of the research design.
+Thus we will look at the different parts of variable names to provide a complete understanding of variables.
+
+1) The first element of variable name is always (except for angle, type of activity and identifier of subject) "t" or "f". "t" denotes that a variable belongs to the time domain. "f" denotes that a variable belongs to the frequency domain.
+2) The second element is usually a "Body" or "Gravity". Well ... honestly, I don't know what authors of original research meant, probably that further computations were made in body or gravity domain. So let's put it that way: "Body" stands for body and "Gravity" stands for gravity :)
+3) The third element spells out the instrument which data was used to compute values. There were two instruments: accelerometer and gyroscope. 
+4) The fourth element may or may not be included in the names of variables. It takes two values - "jerk" that means jerk signals and "magnitude" that mean the magnitude of signals of the used instrument.
+Those above are elements that constitute a basic variable. Almost any basic variable is just a combination of those parts.
+5) This part is separated by a hyphen. It represents the different operations that were made on value of the basic variable. For example "tBodyGyroscopeMagnitude-mean" means that we take a mean of "tBodyGyroscopeMagnitude" and that value will be in a data frame. Thes part may take next values:
+mean(): Mean value
+std(): Standard deviation
+mad(): Median absolute deviation 
+max(): Largest value in array
+min(): Smallest value in array
+sma(): Signal magnitude area
+energy(): Energy measure. Sum of the squares divided by the number of values. 
+iqr(): Interquartile range 
+entropy(): Signal entropy
+arCoeff(): Autorregresion coefficients with Burg order equal to 4
+correlation(): correlation coefficient between two signals
+maxInds(): index of the frequency component with largest magnitude
+meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+skewness(): skewness of the frequency domain signal 
+kurtosis(): kurtosis of the frequency domain signal 
+bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
+6) The sixth part also separated by a hyphen and represents the axis for which computations were made. (Also in that part we can find numbers, but again, I don't understand what they stands for :)
+7) Special case: angle() which stands for an angle between two vectors.
+
+So, by combining the meaning of parts above you can cath the meaning of whole variable! (Well, it works :)
+
+Also there is variable called "Type of activity" which values are pretty self-explanatory. 
+Values of a variable called "ID of subject" stands for the identifier of subjects and takes values from 1 to 30. 
